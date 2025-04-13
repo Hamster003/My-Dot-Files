@@ -1,0 +1,20 @@
+format = '''
+$username$directory$cmd_duration
+[└─>](white bold) '''
+
+[directory]
+truncation_length = 3
+format='[$path]($style)[$read_only]($read_only_style) '
+style='white bold'
+read_only_style='bold red'
+[cmd_duration]
+min_time = 1
+format = '[$duration](white)'
+
+
+[username]
+style_user = '#0000FF'
+style_root = 'bold red'
+format = '[$user]($style) '
+disabled = false
+show_always = true
